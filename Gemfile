@@ -7,13 +7,11 @@ gem 'rails', '3.0.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-group :development do
-	gem 'rspec-rails'
+group :test, :development do
+	gem "rspec-rails", "~> 2.4"
+	gem "autotest"
 end
 
-group :test do
-	gem 'rspec'
-end
 
 
 
